@@ -10,7 +10,7 @@ The goal is to act as the founding technical writer for this service. You must e
 2.	**Internal Engineers**: Our own engineers who need to manage the service.
 
 These are the documents that guide you throughout the process: 
-1. [README.md](https://github.com/kalgan5/transactionify/blob/main/README.md)
+1. This README file: [README.md](https://github.com/kalgan5/transactionify/blob/main/README.md)
 2. Quick Start Guide: [quick-start-guide.md](https://github.com/kalgan5/transactionify/blob/main/quick-start-guide.md)
 3. Developer Tutorial for Transactionify microservice: [developer-tutorial.md](https://github.com/kalgan5/transactionify/blob/main/developer-tutorial.md)
 4. Internal Developer Guide: [internal-developer.md](https://github.com/kalgan5/transactionify/blob/main/internal-developer.md)
