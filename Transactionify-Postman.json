@@ -1,0 +1,133 @@
+{
+    "info": {
+        "name": "Transactionify API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "Postman collection for Transactionify API with all endpoints and variables."
+    },
+    "item": [
+        {
+            "name": "Create Account",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/accounts",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "accounts"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"currency\": \"USD\"}"
+                }
+            }
+        },
+        {
+            "name": "Get Account Balance",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/accounts/:accountId/balance",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "accounts",
+                        ":accountId",
+                        "balance"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Make Payment",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/accounts/:accountId/payments",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "accounts",
+                        ":accountId",
+                        "payments"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"amount\": 100.0}"
+                }
+            }
+        },
+        {
+            "name": "List Transactions",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "{{api_key}}"
+                    }
+                ],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/accounts/:accountId/transactions",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "accounts",
+                        ":accountId",
+                        "transactions"
+                    ]
+                }
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "https://gj7edrv1il.execute-api.us-east-1.amazonaws.com"
+        },
+        {
+            "key": "api_key",
+            "value": "7a94f6af-377d-7c2d-b73c-852ff8411d90"
+        }
+    ]
+}
